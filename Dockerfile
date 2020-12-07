@@ -19,7 +19,7 @@ ENV MYSQL_DATABASE=mattermost_test
 WORKDIR /mm
 
 # Copy over files
-ENV MM_VERSION=5.28.2
+ENV MM_VERSION=5.29.1
 ADD https://releases.mattermost.com/${MM_VERSION}/mattermost-team-${MM_VERSION}-linux-amd64.tar.gz .
 RUN tar -zxvf ./mattermost-team-${MM_VERSION}-linux-amd64.tar.gz
 ADD config_docker.json ./mattermost/config/config_docker.json
